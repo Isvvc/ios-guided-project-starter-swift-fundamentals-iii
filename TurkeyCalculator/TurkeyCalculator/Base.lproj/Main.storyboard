@@ -59,6 +59,9 @@
                                         <rect key="frame" x="0.0" y="76" width="382" height="36"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="Calculate"/>
+                                        <connections>
+                                            <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RpP-hV-mi4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -69,6 +72,9 @@
                                 <rect key="frame" x="339" y="204" width="59" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <state key="normal" title="Metric"/>
+                                <connections>
+                                    <action selector="metricButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hcN-8H-TSZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -82,6 +88,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cookTimeTextField" destination="c84-lN-9u6" id="I2a-od-tdk"/>
+                        <outlet property="metricButton" destination="741-x8-qez" id="Cgz-1i-3Ml"/>
+                        <outlet property="turkeyWeightTextField" destination="sDB-bT-zsr" id="sM9-VO-xMN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
